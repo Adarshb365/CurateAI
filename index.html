@@ -660,7 +660,14 @@ function matchProducts(tags, gender, limit=5, opts={}) {
       if (ethnicFamily.has(opts.style) && activeFamily.has(p.style)) continue;
       if (activeFamily.has(opts.style) && ethnicFamily.has(p.style)) continue;
     }
-    if (opts.category && p.category !== opts.category)                continue;
+    if (opts.category) {
+      const ethnicStyleSet = new Set(['ethnic','festive','ethnic-boho','ethnic-fusion']);
+      // ethnic category search: also include topwear/dress/bottomwear with ethnic-family style
+      const passEthnic = opts.category === 'ethnic' &&
+                         ['topwear','dress','bottomwear'].includes(p.category) &&
+                         ethnicStyleSet.has(p.style);
+      if (!passEthnic && p.category !== opts.category) continue;
+    }
     if (opts.brand   && p.brand.toLowerCase() !== opts.brand.toLowerCase()) continue;
     if (opts.max_price && p.price > opts.max_price) continue;
     if (opts.min_price && p.price < opts.min_price) continue;
