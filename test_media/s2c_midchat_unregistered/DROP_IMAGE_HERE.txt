@@ -1,0 +1,1 @@
+drop s2c_backpack.jpg here

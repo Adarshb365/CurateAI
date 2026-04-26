@@ -1,0 +1,1364 @@
+[
+  {
+    "phone": "9876543210",
+    "name": "Adarsh B",
+    "email": "adarsh@example.com",
+    "instagram_handle": "@adarsh_b",
+    "total_orders": 14,
+    "total_gmv": 28400,
+    "avg_order_value": 2028,
+    "last_order_days": 12,
+    "top_category": "topwear",
+    "top_brands": [
+      "SNITCH",
+      "Bewakoof",
+      "Campus Shoes"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "HDFC",
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.07,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Bewakoof": 200,
+      "Campus Shoes": 0,
+      "SNITCH": 75
+    },
+    "loyalty_tier": "Gold",
+    "address": {
+      "line1": "42, 5th Cross, Indiranagar",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560038"
+    }
+  },
+  {
+    "phone": "9123456780",
+    "name": "Priya K",
+    "email": "priya@example.com",
+    "instagram_handle": "@priya_k22",
+    "total_orders": 21,
+    "total_gmv": 31500,
+    "avg_order_value": 1500,
+    "last_order_days": 5,
+    "top_category": "ethnic",
+    "top_brands": [
+      "Libas",
+      "W for Woman",
+      "Biba"
+    ],
+    "num_merchants": 6,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "PhonePe",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Libas": 150,
+      "W for Woman": 100,
+      "Biba": 0
+    },
+    "loyalty_tier": "Gold",
+    "address": {
+      "line1": "18, 2nd Main, Koramangala 4th Block",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560034"
+    }
+  },
+  {
+    "phone": "9988776655",
+    "name": "Rahul M",
+    "email": "rahul@example.com",
+    "instagram_handle": "@rahul_m_fits",
+    "total_orders": 8,
+    "total_gmv": 12800,
+    "avg_order_value": 1600,
+    "last_order_days": 22,
+    "top_category": "footwear",
+    "top_brands": [
+      "Puma India",
+      "Bewakoof"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "GPay",
+    "rto_count": 1,
+    "rto_rate": 0.125,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Puma India": 75,
+      "Bewakoof": 50
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "9871234560",
+    "name": "Sneha R",
+    "email": "sneha@example.com",
+    "instagram_handle": "@sneha_r_style",
+    "total_orders": 18,
+    "total_gmv": 41400,
+    "avg_order_value": 2300,
+    "last_order_days": 8,
+    "top_category": "dress",
+    "top_brands": [
+      "Sassafras",
+      "Aurelia",
+      "W for Woman"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "ICICI",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Aurelia": 300,
+      "Sassafras": 150,
+      "W for Woman": 50
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9765432100",
+    "name": "Vikram S",
+    "email": "vikram@example.com",
+    "instagram_handle": "@vikrams99",
+    "total_orders": 9,
+    "total_gmv": 7200,
+    "avg_order_value": 800,
+    "last_order_days": 45,
+    "top_category": "topwear",
+    "top_brands": [
+      "SNITCH",
+      "Wrogn"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 3,
+    "rto_rate": 0.33,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "SNITCH": 0,
+      "Wrogn": 0
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "9654321000",
+    "name": "Ananya P",
+    "email": "ananya@example.com",
+    "instagram_handle": "@ananya_p_ootd",
+    "total_orders": 25,
+    "total_gmv": 37500,
+    "avg_order_value": 1500,
+    "last_order_days": 3,
+    "top_category": "ethnic",
+    "top_brands": [
+      "Libas",
+      "Biba",
+      "Jaipur Kurti"
+    ],
+    "num_merchants": 7,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "Paytm",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Libas": 200,
+      "Biba": 75,
+      "Jaipur Kurti": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9543210001",
+    "name": "Rohan D",
+    "email": "rohan@example.com",
+    "instagram_handle": "@rohan_d_fits",
+    "total_orders": 11,
+    "total_gmv": 19800,
+    "avg_order_value": 1800,
+    "last_order_days": 18,
+    "top_category": "footwear",
+    "top_brands": [
+      "Mochi",
+      "Wrogn"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Axis",
+    "preferred_upi_app": null,
+    "rto_count": 2,
+    "rto_rate": 0.18,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Mochi": 100,
+      "Wrogn": 150
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9432100012",
+    "name": "Kavya N",
+    "email": "kavya@example.com",
+    "instagram_handle": "@kavya_n_craft",
+    "total_orders": 16,
+    "total_gmv": 28800,
+    "avg_order_value": 1800,
+    "last_order_days": 14,
+    "top_category": "ethnic",
+    "top_brands": [
+      "FabIndia",
+      "Caprese",
+      "Global Desi"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "netbanking",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "FabIndia": 250,
+      "Caprese": 100,
+      "Global Desi": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9321000123",
+    "name": "Arjun T",
+    "email": "arjun@example.com",
+    "instagram_handle": "@arjun_t_streets",
+    "total_orders": 7,
+    "total_gmv": 11200,
+    "avg_order_value": 1600,
+    "last_order_days": 30,
+    "top_category": "footwear",
+    "top_brands": [
+      "Puma India",
+      "Campus Shoes"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "PhonePe",
+    "rto_count": 2,
+    "rto_rate": 0.28,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "Puma India": 0,
+      "Campus Shoes": 50
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "9210001234",
+    "name": "Meera S",
+    "email": "meera@example.com",
+    "instagram_handle": "@meera_s_closet",
+    "total_orders": 28,
+    "total_gmv": 52000,
+    "avg_order_value": 1857,
+    "last_order_days": 4,
+    "top_category": "accessories",
+    "top_brands": [
+      "Mokobara",
+      "Caprese",
+      "Giva"
+    ],
+    "num_merchants": 6,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Kotak",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Zouk": 75,
+      "Caprese": 0,
+      "Giva": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9811223344",
+    "name": "Karan V",
+    "email": "karan@example.com",
+    "instagram_handle": "@karan_v_style",
+    "total_orders": 12,
+    "total_gmv": 18600,
+    "avg_order_value": 1550,
+    "last_order_days": 20,
+    "top_category": "topwear",
+    "top_brands": [
+      "The Bear House",
+      "Rare Rabbit"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "SBI",
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.08,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "The Bear House": 150,
+      "Rare Rabbit": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9700112233",
+    "name": "Divya M",
+    "email": "divya@example.com",
+    "instagram_handle": "@divya_m_ootd",
+    "total_orders": 19,
+    "total_gmv": 29450,
+    "avg_order_value": 1550,
+    "last_order_days": 7,
+    "top_category": "dress",
+    "top_brands": [
+      "Urbanic",
+      "Twenty Dresses",
+      "Sassafras"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "PhonePe",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Urbanic": 80,
+      "Twenty Dresses": 120,
+      "Sassafras": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9600223344",
+    "name": "Amit J",
+    "email": "amit@example.com",
+    "instagram_handle": "@amitj_fits",
+    "total_orders": 5,
+    "total_gmv": 6500,
+    "avg_order_value": 1300,
+    "last_order_days": 60,
+    "top_category": "topwear",
+    "top_brands": [
+      "Bewakoof",
+      "The Souled Store"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.2,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Bewakoof": 0,
+      "The Souled Store": 0
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "9500334455",
+    "name": "Nisha P",
+    "email": "nisha@example.com",
+    "instagram_handle": "@nisha_p_wears",
+    "total_orders": 23,
+    "total_gmv": 34500,
+    "avg_order_value": 1500,
+    "last_order_days": 9,
+    "top_category": "ethnic",
+    "top_brands": [
+      "Jaipur Kurti",
+      "FabIndia",
+      "Libas"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "HDFC",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Jaipur Kurti": 180,
+      "FabIndia": 90,
+      "Libas": 50
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9400445566",
+    "name": "Siddharth G",
+    "email": "sid@example.com",
+    "instagram_handle": "@sid_g_style",
+    "total_orders": 10,
+    "total_gmv": 22000,
+    "avg_order_value": 2200,
+    "last_order_days": 25,
+    "top_category": "footwear",
+    "top_brands": [
+      "Neemans",
+      "Puma India"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "GPay",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Neemans": 300,
+      "Puma India": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9300556677",
+    "name": "Pooja S",
+    "email": "pooja@example.com",
+    "instagram_handle": "@pooja_s_fits",
+    "total_orders": 15,
+    "total_gmv": 19500,
+    "avg_order_value": 1300,
+    "last_order_days": 11,
+    "top_category": "topwear",
+    "top_brands": [
+      "W for Woman",
+      "Aurelia"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "Paytm",
+    "rto_count": 1,
+    "rto_rate": 0.06,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "W for Woman": 75,
+      "Aurelia": 150
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9200667788",
+    "name": "Tarun K",
+    "email": "tarun@example.com",
+    "instagram_handle": "@tarun_k_ootd",
+    "total_orders": 6,
+    "total_gmv": 5400,
+    "avg_order_value": 900,
+    "last_order_days": 40,
+    "top_category": "topwear",
+    "top_brands": [
+      "SNITCH",
+      "Wrogn"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 2,
+    "rto_rate": 0.33,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "SNITCH": 0,
+      "Wrogn": 0
+    },
+    "loyalty_tier": "Bronze"
+  },
+  {
+    "phone": "9100778899",
+    "name": "Riya D",
+    "email": "riya@example.com",
+    "instagram_handle": "@riya_d_closet",
+    "total_orders": 30,
+    "total_gmv": 45000,
+    "avg_order_value": 1500,
+    "last_order_days": 2,
+    "top_category": "accessories",
+    "top_brands": [
+      "Zouk",
+      "Giva",
+      "Fastrack"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "ICICI",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Zouk": 200,
+      "Giva": 150,
+      "Fastrack": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9090909090",
+    "name": "Varun N",
+    "email": "varun@example.com",
+    "instagram_handle": "@varun_n_fits",
+    "total_orders": 9,
+    "total_gmv": 13500,
+    "avg_order_value": 1500,
+    "last_order_days": 35,
+    "top_category": "topwear",
+    "top_brands": [
+      "The Souled Store",
+      "Bewakoof"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "PhonePe",
+    "rto_count": 1,
+    "rto_rate": 0.11,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "The Souled Store": 0,
+      "Bewakoof": 100
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "9080808080",
+    "name": "Deepika R",
+    "email": "deepika@example.com",
+    "instagram_handle": "@deepika_r_ootd",
+    "total_orders": 22,
+    "total_gmv": 39600,
+    "avg_order_value": 1800,
+    "last_order_days": 6,
+    "top_category": "dress",
+    "top_brands": [
+      "Global Desi",
+      "Twenty Dresses",
+      "Urbanic"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Axis",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Global Desi": 250,
+      "Twenty Dresses": 0,
+      "Urbanic": 80
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9070707070",
+    "name": "Mohit B",
+    "email": "mohit@example.com",
+    "instagram_handle": "@mohit_b_style",
+    "total_orders": 7,
+    "total_gmv": 8400,
+    "avg_order_value": 1200,
+    "last_order_days": 50,
+    "top_category": "bottomwear",
+    "top_brands": [
+      "Bewakoof",
+      "Puma India"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.14,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Bewakoof": 50,
+      "Puma India": 0
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "9060606060",
+    "name": "Simran K",
+    "email": "simran@example.com",
+    "instagram_handle": "@simran_k_wears",
+    "total_orders": 17,
+    "total_gmv": 25500,
+    "avg_order_value": 1500,
+    "last_order_days": 10,
+    "top_category": "ethnic",
+    "top_brands": [
+      "Biba",
+      "Libas",
+      "Aurelia"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "GPay",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Biba": 180,
+      "Libas": 60,
+      "Aurelia": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9050505050",
+    "name": "Nikhil S",
+    "email": "nikhil@example.com",
+    "instagram_handle": "@nikhil_s_fits",
+    "total_orders": 11,
+    "total_gmv": 15400,
+    "avg_order_value": 1400,
+    "last_order_days": 28,
+    "top_category": "footwear",
+    "top_brands": [
+      "Campus Shoes",
+      "Solethreads"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Kotak",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Campus Shoes": 100,
+      "Solethreads": 50
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9040404040",
+    "name": "Anjali M",
+    "email": "anjali@example.com",
+    "instagram_handle": "@anjali_m_style",
+    "total_orders": 26,
+    "total_gmv": 46800,
+    "avg_order_value": 1800,
+    "last_order_days": 4,
+    "top_category": "accessories",
+    "top_brands": [
+      "Caprese",
+      "Assembly",
+      "Fastrack"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "SBI",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Caprese": 300,
+      "Assembly": 150,
+      "Fastrack": 80
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9030303030",
+    "name": "Harsh V",
+    "email": "harsh@example.com",
+    "instagram_handle": "@harsh_v_ootd",
+    "total_orders": 4,
+    "total_gmv": 3600,
+    "avg_order_value": 900,
+    "last_order_days": 75,
+    "top_category": "topwear",
+    "top_brands": [
+      "The Souled Store"
+    ],
+    "num_merchants": 1,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.25,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "The Souled Store": 0
+    },
+    "loyalty_tier": "Bronze"
+  },
+  {
+    "phone": "9020202020",
+    "name": "Tanya G",
+    "email": "tanya@example.com",
+    "instagram_handle": "@tanya_g_closet",
+    "total_orders": 20,
+    "total_gmv": 30000,
+    "avg_order_value": 1500,
+    "last_order_days": 15,
+    "top_category": "topwear",
+    "top_brands": [
+      "W for Woman",
+      "Global Desi",
+      "Urbanic"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "Paytm",
+    "rto_count": 1,
+    "rto_rate": 0.05,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "W for Woman": 200,
+      "Global Desi": 100,
+      "Urbanic": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "9010101010",
+    "name": "Dhruv P",
+    "email": "dhruv@example.com",
+    "instagram_handle": "@dhruv_p_style",
+    "total_orders": 13,
+    "total_gmv": 23400,
+    "avg_order_value": 1800,
+    "last_order_days": 19,
+    "top_category": "footwear",
+    "top_brands": [
+      "Neemans",
+      "Mochi"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "HDFC",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Neemans": 200,
+      "Mochi": 75
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8999999999",
+    "name": "Ishita B",
+    "email": "ishita@example.com",
+    "instagram_handle": "@ishita_b_fits",
+    "total_orders": 24,
+    "total_gmv": 36000,
+    "avg_order_value": 1500,
+    "last_order_days": 7,
+    "top_category": "dress",
+    "top_brands": [
+      "Sassafras",
+      "Twenty Dresses",
+      "Urbanic"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "PhonePe",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Sassafras": 180,
+      "Twenty Dresses": 90,
+      "Urbanic": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8988888888",
+    "name": "Aakash R",
+    "email": "aakash@example.com",
+    "instagram_handle": "@aakash_r_ootd",
+    "total_orders": 8,
+    "total_gmv": 9600,
+    "avg_order_value": 1200,
+    "last_order_days": 55,
+    "top_category": "topwear",
+    "top_brands": [
+      "Wrogn",
+      "SNITCH"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "GPay",
+    "rto_count": 2,
+    "rto_rate": 0.25,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "Wrogn": 0,
+      "SNITCH": 50
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "8977777777",
+    "name": "Komal S",
+    "email": "komal@example.com",
+    "instagram_handle": "@komal_s_style",
+    "total_orders": 18,
+    "total_gmv": 27000,
+    "avg_order_value": 1500,
+    "last_order_days": 12,
+    "top_category": "ethnic",
+    "top_brands": [
+      "FabIndia",
+      "Jaipur Kurti"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "netbanking",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "FabIndia": 300,
+      "Jaipur Kurti": 100
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8966666666",
+    "name": "Saurabh T",
+    "email": "saurabh@example.com",
+    "instagram_handle": "@saurabh_t_fits",
+    "total_orders": 9,
+    "total_gmv": 12600,
+    "avg_order_value": 1400,
+    "last_order_days": 38,
+    "top_category": "bottomwear",
+    "top_brands": [
+      "Puma India",
+      "SNITCH"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Axis",
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.11,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Puma India": 100,
+      "SNITCH": 0
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "8955555555",
+    "name": "Neha A",
+    "email": "neha@example.com",
+    "instagram_handle": "@neha_a_closet",
+    "total_orders": 27,
+    "total_gmv": 40500,
+    "avg_order_value": 1500,
+    "last_order_days": 5,
+    "top_category": "accessories",
+    "top_brands": [
+      "Zouk",
+      "Mokobara",
+      "Giva"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "ICICI",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Zouk": 250,
+      "Mokobara": 400,
+      "Giva": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8944444444",
+    "name": "Rohit C",
+    "email": "rohit@example.com",
+    "instagram_handle": "@rohit_c_style",
+    "total_orders": 6,
+    "total_gmv": 7200,
+    "avg_order_value": 1200,
+    "last_order_days": 65,
+    "top_category": "topwear",
+    "top_brands": [
+      "Bewakoof"
+    ],
+    "num_merchants": 1,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Bewakoof": 50
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "8933333333",
+    "name": "Pallavi N",
+    "email": "pallavi@example.com",
+    "instagram_handle": "@pallavi_n_wears",
+    "total_orders": 21,
+    "total_gmv": 31500,
+    "avg_order_value": 1500,
+    "last_order_days": 9,
+    "top_category": "dress",
+    "top_brands": [
+      "W for Woman",
+      "Aurelia",
+      "Global Desi"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "GPay",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "W for Woman": 120,
+      "Aurelia": 200,
+      "Global Desi": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8922222222",
+    "name": "Gaurav M",
+    "email": "gaurav@example.com",
+    "instagram_handle": "@gaurav_m_ootd",
+    "total_orders": 10,
+    "total_gmv": 16000,
+    "avg_order_value": 1600,
+    "last_order_days": 30,
+    "top_category": "footwear",
+    "top_brands": [
+      "Campus Shoes",
+      "ID Shoes"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "Paytm",
+    "rto_count": 2,
+    "rto_rate": 0.2,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Campus Shoes": 80,
+      "ID Shoes": 30
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8911111111",
+    "name": "Shruti V",
+    "email": "shruti@example.com",
+    "instagram_handle": "@shruti_v_style",
+    "total_orders": 16,
+    "total_gmv": 24000,
+    "avg_order_value": 1500,
+    "last_order_days": 14,
+    "top_category": "ethnic",
+    "top_brands": [
+      "Libas",
+      "Biba"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "SBI",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Libas": 220,
+      "Biba": 80
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8900000000",
+    "name": "Manish P",
+    "email": "manish@example.com",
+    "instagram_handle": "@manish_p_fits",
+    "total_orders": 7,
+    "total_gmv": 8400,
+    "avg_order_value": 1200,
+    "last_order_days": 42,
+    "top_category": "topwear",
+    "top_brands": [
+      "The Bear House",
+      "Rare Rabbit"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Kotak",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "The Bear House": 0,
+      "Rare Rabbit": 120
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "8800000001",
+    "name": "Zara H",
+    "email": "zara@example.com",
+    "instagram_handle": "@zara_h_ootd",
+    "total_orders": 32,
+    "total_gmv": 57600,
+    "avg_order_value": 1800,
+    "last_order_days": 3,
+    "top_category": "accessories",
+    "top_brands": [
+      "Caprese",
+      "Giva",
+      "Zouk"
+    ],
+    "num_merchants": 6,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "HDFC",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Caprese": 450,
+      "Giva": 200,
+      "Zouk": 100
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8800000002",
+    "name": "Pranav S",
+    "email": "pranav@example.com",
+    "instagram_handle": "@pranav_s_style",
+    "total_orders": 5,
+    "total_gmv": 4500,
+    "avg_order_value": 900,
+    "last_order_days": 90,
+    "top_category": "topwear",
+    "top_brands": [
+      "Bewakoof",
+      "The Souled Store"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.2,
+    "rto_risk_score": "medium",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Bewakoof": 0,
+      "The Souled Store": 0
+    },
+    "loyalty_tier": "Bronze"
+  },
+  {
+    "phone": "8800000003",
+    "name": "Lakshmi R",
+    "email": "lakshmi@example.com",
+    "instagram_handle": "@lakshmi_r_wears",
+    "total_orders": 20,
+    "total_gmv": 30000,
+    "avg_order_value": 1500,
+    "last_order_days": 8,
+    "top_category": "ethnic",
+    "top_brands": [
+      "FabIndia",
+      "Jaipur Kurti",
+      "Libas"
+    ],
+    "num_merchants": 5,
+    "preferred_payment": "netbanking",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "FabIndia": 180,
+      "Jaipur Kurti": 140,
+      "Libas": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8800000004",
+    "name": "Vivek K",
+    "email": "vivek@example.com",
+    "instagram_handle": "@vivek_k_fits",
+    "total_orders": 8,
+    "total_gmv": 11200,
+    "avg_order_value": 1400,
+    "last_order_days": 48,
+    "top_category": "footwear",
+    "top_brands": [
+      "Puma India",
+      "Neemans"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "GPay",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Puma India": 120,
+      "Neemans": 0
+    },
+    "loyalty_tier": "Silver"
+  },
+  {
+    "phone": "8800000005",
+    "name": "Charu B",
+    "email": "charu@example.com",
+    "instagram_handle": "@charu_b_style",
+    "total_orders": 14,
+    "total_gmv": 21000,
+    "avg_order_value": 1500,
+    "last_order_days": 16,
+    "top_category": "dress",
+    "top_brands": [
+      "Urbanic",
+      "Sassafras"
+    ],
+    "num_merchants": 3,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "PhonePe",
+    "rto_count": 1,
+    "rto_rate": 0.07,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Urbanic": 150,
+      "Sassafras": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8800000006",
+    "name": "Suresh N",
+    "email": "suresh@example.com",
+    "instagram_handle": "@suresh_n_ootd",
+    "total_orders": 4,
+    "total_gmv": 3200,
+    "avg_order_value": 800,
+    "last_order_days": 80,
+    "top_category": "topwear",
+    "top_brands": [
+      "SNITCH"
+    ],
+    "num_merchants": 1,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 3,
+    "rto_rate": 0.75,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "SNITCH": 0
+    },
+    "loyalty_tier": "Bronze"
+  },
+  {
+    "phone": "8800000007",
+    "name": "Preethi A",
+    "email": "preethi@example.com",
+    "instagram_handle": "@preethi_a_fits",
+    "total_orders": 19,
+    "total_gmv": 28500,
+    "avg_order_value": 1500,
+    "last_order_days": 11,
+    "top_category": "topwear",
+    "top_brands": [
+      "W for Woman",
+      "Twenty Dresses",
+      "Urbanic"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "Axis",
+    "preferred_upi_app": null,
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "W for Woman": 90,
+      "Twenty Dresses": 60,
+      "Urbanic": 0
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8800000008",
+    "name": "Arun T",
+    "email": "arun@example.com",
+    "instagram_handle": "@arun_t_style",
+    "total_orders": 11,
+    "total_gmv": 16500,
+    "avg_order_value": 1500,
+    "last_order_days": 26,
+    "top_category": "footwear",
+    "top_brands": [
+      "Mochi",
+      "Campus Shoes"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "credit_card",
+    "preferred_card_bank": "ICICI",
+    "preferred_upi_app": null,
+    "rto_count": 1,
+    "rto_rate": 0.09,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Mochi": 200,
+      "Campus Shoes": 50
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8800000009",
+    "name": "Swati M",
+    "email": "swati@example.com",
+    "instagram_handle": "@swati_m_closet",
+    "total_orders": 24,
+    "total_gmv": 43200,
+    "avg_order_value": 1800,
+    "last_order_days": 6,
+    "top_category": "accessories",
+    "top_brands": [
+      "Assembly",
+      "Mokobara",
+      "Fastrack"
+    ],
+    "num_merchants": 4,
+    "preferred_payment": "upi",
+    "preferred_card_bank": null,
+    "preferred_upi_app": "Paytm",
+    "rto_count": 0,
+    "rto_rate": 0.0,
+    "rto_risk_score": "low",
+    "cod_eligible": true,
+    "merchant_rewards": {
+      "Assembly": 300,
+      "Mokobara": 200,
+      "Fastrack": 60
+    },
+    "loyalty_tier": "Gold"
+  },
+  {
+    "phone": "8800000010",
+    "name": "Rajesh D",
+    "email": "rajesh@example.com",
+    "instagram_handle": "@rajesh_d_fits",
+    "total_orders": 6,
+    "total_gmv": 7200,
+    "avg_order_value": 1200,
+    "last_order_days": 55,
+    "top_category": "topwear",
+    "top_brands": [
+      "The Bear House",
+      "Wrogn"
+    ],
+    "num_merchants": 2,
+    "preferred_payment": "cod",
+    "preferred_card_bank": null,
+    "preferred_upi_app": null,
+    "rto_count": 2,
+    "rto_rate": 0.33,
+    "rto_risk_score": "high",
+    "cod_eligible": false,
+    "merchant_rewards": {
+      "The Bear House": 0,
+      "Wrogn": 0
+    },
+    "loyalty_tier": "Silver"
+  }
+]

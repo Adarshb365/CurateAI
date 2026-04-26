@@ -1,0 +1,4 @@
+{
+  "buildCommand": "sed -i \"s/GEMINI_KEY_PLACEHOLDER/$GEMINI_API_KEY/g\" index.html",
+  "outputDirectory": "."
+}

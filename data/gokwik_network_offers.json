@@ -1,0 +1,155 @@
+{
+  "_note": "GoKwik network-level payment offers — negotiated centrally, apply at all GoKwik merchant checkouts regardless of merchant",
+  "bank_offers": [
+    {
+      "id": "gkw_hdfc_cc",
+      "offer_type": "bank_offer",
+      "payment_method": "credit_card",
+      "card_bank": "HDFC",
+      "discount_type": "percent",
+      "discount_value": 10,
+      "max_discount": 200,
+      "min_order_value": 999,
+      "display_label": "10% off with HDFC Credit Card, up to ₹200"
+    },
+    {
+      "id": "gkw_icici_cc",
+      "offer_type": "bank_offer",
+      "payment_method": "credit_card",
+      "card_bank": "ICICI",
+      "discount_type": "percent",
+      "discount_value": 10,
+      "max_discount": 175,
+      "min_order_value": 799,
+      "display_label": "10% off with ICICI Credit Card, up to ₹175"
+    },
+    {
+      "id": "gkw_kotak_cc",
+      "offer_type": "bank_offer",
+      "payment_method": "credit_card",
+      "card_bank": "Kotak",
+      "discount_type": "percent",
+      "discount_value": 10,
+      "max_discount": 175,
+      "min_order_value": 899,
+      "display_label": "10% off with Kotak Credit Card, up to ₹175"
+    },
+    {
+      "id": "gkw_axis_cc",
+      "offer_type": "bank_offer",
+      "payment_method": "credit_card",
+      "card_bank": "Axis",
+      "discount_type": "percent",
+      "discount_value": 10,
+      "max_discount": 200,
+      "min_order_value": 999,
+      "display_label": "10% off with Axis Credit Card, up to ₹200"
+    },
+    {
+      "id": "gkw_sbi_cc",
+      "offer_type": "bank_offer",
+      "payment_method": "credit_card",
+      "card_bank": "SBI",
+      "discount_type": "percent",
+      "discount_value": 8,
+      "max_discount": 150,
+      "min_order_value": 699,
+      "display_label": "8% off with SBI Credit Card, up to ₹150"
+    }
+  ],
+  "upi_offers": [
+    {
+      "id": "gkw_phonepe",
+      "offer_type": "upi_offer",
+      "payment_method": "upi",
+      "upi_app": "PhonePe",
+      "discount_type": "flat",
+      "discount_value": 75,
+      "min_order_value": 699,
+      "display_label": "₹75 cashback with PhonePe"
+    },
+    {
+      "id": "gkw_gpay",
+      "offer_type": "upi_offer",
+      "payment_method": "upi",
+      "upi_app": "GPay",
+      "discount_type": "flat",
+      "discount_value": 50,
+      "min_order_value": 599,
+      "display_label": "₹50 cashback with Google Pay"
+    },
+    {
+      "id": "gkw_paytm",
+      "offer_type": "upi_offer",
+      "payment_method": "upi",
+      "upi_app": "Paytm",
+      "discount_type": "flat",
+      "discount_value": 100,
+      "min_order_value": 999,
+      "display_label": "₹100 cashback with Paytm"
+    },
+    {
+      "id": "gkw_amazonpay",
+      "offer_type": "upi_offer",
+      "payment_method": "upi",
+      "upi_app": "Amazon Pay",
+      "discount_type": "flat",
+      "discount_value": 75,
+      "min_order_value": 799,
+      "display_label": "₹75 cashback with Amazon Pay"
+    }
+  ],
+  "partner_offers": [
+    {
+      "id": "gkw_cred",
+      "offer_type": "partner_offer",
+      "payment_method": "cred",
+      "discount_type": "percent",
+      "discount_value": 5,
+      "max_discount": 250,
+      "min_order_value": 1499,
+      "display_label": "5% off with CRED Pay, up to ₹250"
+    }
+  ],
+  "prepaid_offer": {
+    "id": "gkw_prepaid",
+    "offer_type": "prepaid_offer",
+    "discount_type": "percent",
+    "discount_value": 5,
+    "max_discount": 150,
+    "min_order_value": 599,
+    "display_label": "Extra 5% off on all prepaid orders"
+  },
+  "first_time_payment_offers": [
+    {
+      "id": "gkw_ft_amzpay",
+      "offer_type": "first_time_payment",
+      "payment_method": "upi",
+      "upi_app": "Amazon Pay",
+      "discount_type": "flat",
+      "discount_value": 100,
+      "min_order_value": 499,
+      "display_label": "₹100 off — first Amazon Pay order"
+    },
+    {
+      "id": "gkw_ft_paytm",
+      "offer_type": "first_time_payment",
+      "payment_method": "upi",
+      "upi_app": "Paytm",
+      "discount_type": "flat",
+      "discount_value": 75,
+      "min_order_value": 499,
+      "display_label": "₹75 off — first Paytm order"
+    },
+    {
+      "id": "gkw_ft_prepaid",
+      "offer_type": "first_time_payment",
+      "payment_method": "prepaid",
+      "discount_type": "percent",
+      "discount_value": 5,
+      "max_discount": 150,
+      "min_order_value": 499,
+      "display_label": "5% off up to ₹150 — first prepaid order"
+    }
+  ]
+}
