@@ -246,7 +246,7 @@
     "gender": "women",
     "description": "Solid straight-cut tunic with mandarin collar and pintuck detailing. Ethnic-fusion style.",
     "mrp": 1499,
-    "price": 999,
+    "price": 1299,
     "image_url": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTOTVz4CkjAHFw7QUTVxsW009LrRFJL9RIlaqWNHQTMI4WwOmPToNMm0wbqNmh2Vag8hhAVNG6zQb2AAturxA9V4Ouiexicd28k75jshlru",
     "style": "ethnic-fusion",
     "colors": [
@@ -374,7 +374,7 @@
     "mrp": 1699,
     "price": 1199,
     "image_url": "https://www.globaldesi.in/dw/image/v2/BGCX_PRD/on/demandware.static/-/Sites-masterCatalog_GD/default/dw6001220b/images/hires/SS22/S26H370TP_WHITE_4.jpg?sw=1400&sh=2100&sm=fit&strip=false",
-    "style": "ethnic-boho",
+    "style": "ethnic-tunic-embroidered",
     "colors": [
       "multicolor",
       "white",
@@ -2867,7 +2867,7 @@
     "merchant": "Bewakoof",
     "category": "bottomwear",
     "subcategory": "trousers",
-    "gender": "unisex",
+    "gender": "men",
     "description": "Relaxed woven cargo trouser with roomy utility pockets. Not jersey \u2014 structured twill.",
     "mrp": 1399,
     "price": 999,
