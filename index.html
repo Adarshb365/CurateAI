@@ -640,6 +640,18 @@ function matchProducts(tags, gender, limit=5, opts={}) {
   const scored = [];
   for (const p of S.data.products) {
     if (gender       && p.gender !== gender && p.gender !== 'unisex') continue;
+    // For women searches: don't let unisex streetwear/athletic products bleed into results
+    if (gender === 'women' && p.gender === 'unisex') {
+      const masculineStyle = new Set(['streetwear','athleisure','athletic']);
+      if (masculineStyle.has(p.style)) continue;
+    }
+    // Style family hard block: never mix ethnic ↔ streetwear/athletic
+    if (opts.style && p.style) {
+      const ethnicFamily = new Set(['ethnic','festive','ethnic-boho','ethnic-fusion']);
+      const activeFamily = new Set(['streetwear','athleisure','athletic']);
+      if (ethnicFamily.has(opts.style) && activeFamily.has(p.style)) continue;
+      if (activeFamily.has(opts.style) && ethnicFamily.has(p.style)) continue;
+    }
     if (opts.category && p.category !== opts.category)                continue;
     if (opts.brand   && p.brand.toLowerCase() !== opts.brand.toLowerCase()) continue;
     if (opts.max_price && p.price > opts.max_price) continue;
