@@ -12,7 +12,7 @@ This is the "aha moment" metric. It proves the feature is being used and that th
 
 **Phase 2 — Chat-to-checkout conversion rate:** of sessions where a shopper adds to cart via CurateAI, what % initiate a GoKwik checkout?
 
-This is the metric that matters commercially — for GoKwik and for merchants. GoKwik's core value prop to merchants has always been "we improve your checkout conversion, here's the data." CurateAI lets them extend that same proof upstream into discovery. Once GoKwik can show a merchant "products surfaced in our agent convert at X%," they can charge for priority placement in the agent — sponsored ranking, category exclusivity, whatever the model ends up being. That's a new revenue line on top of the checkout processing fee, and it's credible because GoKwik owns both ends of the funnel — the agent AND the checkout — so the attribution is clean. No third party claiming credit.
+This is the metric that matters commercially — for GoKwik and for merchants. GoKwik's core value prop to merchants has always been "we improve your checkout conversion, here's the data." CurateAI lets them extend that same proof upstream into discovery. Once GoKwik can show a merchant "products surfaced in our agent convert at X%," they can charge for priority placement in the agent — sponsored ranking, category exclusivity, whatever the commercial model ends up being. That's a new revenue line on top of the checkout processing fee, and it's credible because GoKwik owns both ends of the funnel — the agent AND the checkout — so the attribution is clean. No third party claiming credit.
 
 Move activation first to prove demand exists. Move conversion rate to prove the surface earns its place in the merchant's marketing stack.
 
@@ -20,32 +20,32 @@ Move activation first to prove demand exists. Move conversion rate to prove the 
 
 ## (b) What is the biggest technical or trust risk?
 
-Two risks that are specific to this surface — not generic e-commerce problems.
+**Biggest technical risk: Platform dependency.**
 
-**1. Cross-merchant identity stitching without explicit consent in a social context.**
+The entire product lives inside Meta's DM API or WhatsApp Business API. One policy change, API deprecation, or pricing shift by Meta shuts the channel down. GoKwik's checkout SDK is embedded across thousands of merchant checkout pages — it is platform-agnostic by design. CurateAI as described is a single-platform bet. The deeper GoKwik invests in agent capabilities built on top of Meta's API contract, the more stranded those assets become if Meta changes the rules. This is an existential risk, not a feature risk. The V2 architecture needs to treat the channel as a pluggable layer — agent logic portable across Instagram, WhatsApp, and any future surface — not hardwired to one platform's API.
 
-When a shopper DMs a brand on Instagram and shares their phone, they don't expect GoKwik to silently stitch their purchase history across Caprese, Zouk, and Giva. On a merchant's own app, data collection is expected — it's in the T&Cs they clicked through. In a DM thread with a brand they follow, it's not. The agent's value comes precisely from this cross-merchant intelligence — but if this surfaces publicly (a journalist, a viral tweet, a DPDP complaint), the damage hits GoKwik's network trust and the brand's social presence simultaneously. The intimacy of the social context makes the breach feel worse, not better.
+**Biggest trust risk: Multi-merchant post-purchase fragmentation.**
 
-Mitigation: explicit micro-consent at the phone verification moment ("sharing your number lets us check your rewards across brands in our network"), not buried. The current prototype asks for the phone to "check rewards" — that framing needs to be honest about what it actually does at scale.
+In a full-look session, a shopper buys a kurta from Global Desi, trousers from SNITCH, and a tote from Zouk — one chat, one payment, one experience in their head. But behind that is three separate merchant relationships, three fulfillment chains, and three return policies. When something goes wrong — wrong size, damaged item, delayed shipping — the shopper doesn't instinctively think "I need to contact SNITCH." They go back to where they bought it, which in their mental model is CurateAI. GoKwik processes the payment but owns none of the post-purchase experience. That gap is where trust breaks and churn happens.
 
-**2. Platform dependency.**
-
-The entire product lives inside Meta's DM API or WhatsApp Business API. One policy change, API deprecation, or pricing shift by Meta shuts the channel down. GoKwik's checkout SDK is embedded in thousands of merchant checkout pages and is not at any platform's mercy. CurateAI as described in V1 is. The deeper GoKwik invests in the social-commerce surface, the more this single point of failure compounds. V2 architecture needs a channel-agnostic design — the agent logic should be portable across surfaces, not hardwired to Instagram's API contract.
+Bringing order tracking, return initiation, and dispute resolution back into the chat thread is the V2 challenge that makes or breaks long-term retention. It requires deep merchant API integrations for each brand, unified order state management across merchants, and the ability to handle partial refunds in a single-payment multi-merchant flow — none of which are simple. Until this is solved, the more items a shopper buys in one session, the higher the risk of a post-purchase experience that feels abandoned.
 
 ---
 
 ## (c) What is your v2 vision?
 
-CurateAI becomes GoKwik's checkout-in-context API — deployable across any social surface where a brand talks to its shoppers.
+CurateAI becomes GoKwik's checkout-in-context layer — deployable across any social surface where a brand talks to its shoppers, with a conversational experience sharp enough to replace a product page.
 
-V1 proves the agent UX works. V2 is about making it real at scale: WhatsApp Business (the highest-intent messaging surface in India), Instagram DMs via the official API, and any chat thread where a brand-shopper conversation is already happening. The product bet is not that GoKwik has better AI than anyone else — any company can call Gemini or GPT-4o. The bet is that GoKwik's cross-merchant identity and loyalty graph is a moat that takes years to replicate. A new entrant building social commerce AI starts from zero on shopper identity. GoKwik starts with millions of identified shoppers, their wallet balances, their payment preferences, and their RTO profiles already loaded.
+**Five V2 bets:**
 
-Three concrete V2 bets:
+**1. Cross-merchant attribute normalisation.** Size "L" at one brand is not "L" at another. "Off-white" and "cream" and "ivory" are the same colour named three different ways. Fabric specs, fit definitions, and size charts are inconsistent across merchants. Solving this is what lets the agent answer "is this true to size?" or "do you have this in a relaxed fit?" across a multi-merchant catalog — the questions that actually kill fashion conversions pre-checkout. This is the data infrastructure V2 is built on.
 
-**Real catalog integration.** Live product feeds from merchant PIM systems, not a mocked JSON. The agent's matching quality today is limited by catalog depth. With real feeds and structured attributes, vision + search becomes genuinely useful at the scale GoKwik operates.
+**2. Better vision and conversation quality.** A dedicated high-capability vision model for the item identification pass, separate from the conversational model. Shorter, tighter agent responses — every line of text above a product carousel is a scroll the shopper has to do on mobile. And a conversation design shift: ask 1–2 targeted clarifying questions ("casual or dressy?", "any budget?") before firing searches, rather than making assumptions and narrating them. The V1 agent is a search engine with a personality. The V2 agent is a tailor.
 
-**Sponsored placement as a revenue line.** Once chat-to-checkout conversion is proven, merchants pay for their products to rank higher in agent responses — category exclusivity, first-surfaced deals, "featured brand" status. GoKwik owns the attribution (they see the full funnel), so the ROI story to merchants is clean. This is the business model that makes CurateAI a P&L line, not just a feature.
+**3. Native social identity via Instagram auth.** The mid-chat phone nudge and OTP flow are V1 workarounds for the absence of platform identity. V2 integrates Instagram OAuth — the shopper is already logged in, GoKwik matches their handle to the identity graph, no phone number ask needed. This requires a Meta partnership, not just an engineering change. But it removes both the friction and the consent ambiguity in one move.
 
-**Post-purchase in the same thread.** Order status, return initiation, re-order nudge, review request — all in the same DM thread that drove the original discovery. GoKwik already owns the checkout data. Owning the post-purchase conversation is a natural extension that increases merchant stickiness and gives shoppers a reason to return to the thread.
+**4. Sponsored placement as a revenue line.** Once chat-to-checkout conversion is proven, merchants pay for their products to rank higher in agent responses — category exclusivity, first-surfaced deals, featured brand status. GoKwik owns the attribution (they see the full funnel), so the ROI story to merchants is clean. This is the business model that makes CurateAI a P&L line, not just a feature.
+
+**5. Post-purchase in the same thread.** Order tracking, return initiation, re-order nudge — all in the DM thread that drove the original discovery. This directly addresses the fragmentation trust risk: instead of the shopper navigating three merchant portals after a multi-brand purchase, everything surfaces in one thread. GoKwik already owns the checkout data. Building the post-purchase layer closes the loop and gives shoppers a reason to come back to the thread — which is also where the next discovery session starts.
 
 The V2 north star metric: how many GoKwik merchants have activated CurateAI as their default social commerce layer. That's the moat, not the AI.
