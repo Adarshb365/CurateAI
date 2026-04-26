@@ -37,7 +37,7 @@ The prototype simulates an Instagram feed → DM inbox → brand chat thread. In
 Single-file browser app. All state in a JS object `S`. No server.
 
 ```
-callGemini()  →  Gemini 2.0 Flash (text + vision)
+callGemini()  →  Gemini 3 Flash Preview (text + vision)
       ↓
 dispatchTool()  →  search_products / add_to_look / remove_from_cart / view_cart / generate_checkout
       ↓

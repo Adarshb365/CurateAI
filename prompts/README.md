@@ -1,6 +1,6 @@
 # CurateAI — Prompts Documentation
 
-All LLM prompts used by CurateAI are documented here. The system uses **Google Gemini 2.0 Flash** via the `generateContent` API with a dynamic system prompt + 5 function/tool declarations.
+All LLM prompts used by CurateAI are documented here. The system uses **Google Gemini 3 Flash Preview** via the `generateContent` API with a dynamic system prompt + 5 function/tool declarations.
 
 ---
 
