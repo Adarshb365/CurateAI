@@ -260,7 +260,10 @@ def dispatch_tool(tool_name: str, tool_args: dict, session_state) -> dict:
         results = match_products(tags, colors=colors, gender=gender, limit=limit * 2)
         if category:
             filtered = [p for p in results if p.get("category") == category]
-            results = filtered if filtered else results
+            if len(filtered) >= 2:
+                # Enough category-exact results — filter strictly
+                results = filtered
+            # 0 or 1 match: keep full score-ranked results so high scorers aren't displaced
         results = results[:limit]
 
         products_out = []
