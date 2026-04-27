@@ -40,6 +40,16 @@ TOOLS = [
                                 "or ['white','low-top','leather','sneakers'] for white sneakers."
                             )
                         ),
+                        "colors": types.Schema(
+                            type=types.Type.ARRAY,
+                            items=types.Schema(type=types.Type.STRING),
+                            description=(
+                                "Colors visible on the item. Use simple color words. "
+                                "e.g. ['mustard', 'yellow'] for a mustard yellow top, "
+                                "['navy', 'blue'] for a navy piece, ['white'] for white. "
+                                "Always populate this when color is visible — it improves matching."
+                            )
+                        ),
                         "category": types.Schema(
                             type=types.Type.STRING,
                             description="One of: topwear, bottomwear, footwear, accessories, ethnic, dress"
@@ -221,11 +231,12 @@ def dispatch_tool(tool_name: str, tool_args: dict, session_state) -> dict:
 
     if tool_name == "search_products":
         tags = tool_args.get("tags", [])
+        colors = tool_args.get("colors", [])
         category = tool_args.get("category")
         gender = tool_args.get("gender")
         limit = min(int(tool_args.get("limit", 5)), 6)
 
-        results = match_products(tags, gender=gender, limit=limit * 2)
+        results = match_products(tags, colors=colors, gender=gender, limit=limit * 2)
         if category:
             filtered = [p for p in results if p.get("category") == category]
             results = filtered if filtered else results

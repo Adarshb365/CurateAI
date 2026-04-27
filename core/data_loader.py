@@ -36,16 +36,24 @@ def get_image_url(product: dict) -> str:
 
 # ── Product matching ──────────────────────────────────────────────────────────
 
-def match_products(tags: list, gender: str = None, limit: int = 5) -> list:
-    """Return up to `limit` products ranked by tag overlap with the query tags."""
+def match_products(tags: list, colors: list = None, gender: str = None, limit: int = 5) -> list:
+    """Return up to `limit` products ranked by tag + color overlap with the query."""
     tag_set = set(t.lower() for t in tags)
+    color_set = set(c.lower() for c in (colors or []))
     scored = []
     for p in PRODUCTS:
         if gender and p.get("gender") not in (gender, "unisex"):
             continue
-        overlap = len(set(t.lower() for t in p["tags"]) & tag_set)
-        if overlap > 0:
-            scored.append((overlap, p))
+        tag_overlap = len(set(t.lower() for t in p["tags"]) & tag_set)
+        # Expand hyphenated colors so "mustard-yellow" matches "mustard" or "yellow"
+        p_colors = set()
+        for c in p.get("colors", []):
+            p_colors.add(c.lower())
+            p_colors.update(c.lower().replace("-", " ").split())
+        color_overlap = len(p_colors & color_set)
+        score = tag_overlap + color_overlap
+        if score > 0:
+            scored.append((score, p))
     scored.sort(key=lambda x: x[0], reverse=True)
     return [p for _, p in scored[:limit]]
 
