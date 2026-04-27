@@ -238,6 +238,15 @@ def dispatch_tool(tool_name: str, tool_args: dict, session_state) -> dict:
         gender = tool_args.get("gender")
         limit = min(int(tool_args.get("limit", 5)), 6)
 
+        # Persist colors when Gemini provides them; recover them when it doesn't
+        color_ctx: dict = session_state.setdefault("color_context", {})
+        if colors:
+            color_ctx["_last"] = list(colors)
+            if category:
+                color_ctx[category] = list(colors)
+        else:
+            colors = color_ctx.get(category) or color_ctx.get("_last") or []
+
         results = match_products(tags, colors=colors, gender=gender, limit=limit * 2)
         if category:
             filtered = [p for p in results if p.get("category") == category]
