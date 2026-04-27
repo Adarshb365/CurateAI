@@ -27,7 +27,22 @@ def get_shopper(phone: str):
 
 # ── Images ────────────────────────────────────────────────────────────────────
 
-def get_image_url(product: dict) -> str:
+def get_image_url(product: dict, preferred_colors: list = None) -> str:
+    # Try to serve the correct color variant from local color_images
+    if preferred_colors:
+        color_images = product.get("color_images", {})
+        for key, path in color_images.items():
+            key_tokens = set(key.lower().replace("-", " ").split() + [key.lower()])
+            if any(c.lower() in key_tokens for c in preferred_colors):
+                # Resolve path relative to data dir (paths are like "./data/images/...")
+                rel = path.replace("./data/", "").lstrip("/")
+                abs_path = os.path.normpath(os.path.join(_BASE, rel))
+                if os.path.exists(abs_path):
+                    import base64
+                    with open(abs_path, "rb") as f:
+                        data = base64.b64encode(f.read()).decode()
+                    mime = "image/png" if abs_path.endswith(".png") else "image/jpeg"
+                    return f"data:{mime};base64,{data}"
     keyword = product.get("image_keyword", "")
     if keyword and keyword in IMAGE_CACHE:
         return IMAGE_CACHE[keyword]

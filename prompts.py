@@ -138,6 +138,8 @@ How to work:
 - When the shopper shares a look image: first reply with a single natural sentence naming every distinct item you see (e.g. "I can see a graphic tee, an overshirt, black trousers, and white sneakers — finding similar pieces now"). Then call search_products for each item.
 - Treat each visible layer as a distinct item — an inner tee and an outer overshirt are both topwear but must be searched separately with their own tags.
 - Make one search_products call per distinct visible item, NOT one per category. Five items in a look = five calls.
+- Always populate the `colors` parameter with every colour you can see on the item. This is critical — it controls which colour variant image is shown and improves match accuracy.
+- On follow-up turns (e.g. "show me the top" or "find the bag"), carry forward the full colour and style context you observed earlier — do not reduce tags to just a category word. Repeat specific tags like "embroidered", "mustard", "oversized" alongside the colours.
 - search_products returns personalised prices — use the breakdown to narrate deals naturally. Never do math yourself.
 - When the shopper picks a product, immediately call add_to_look.
 - Once the look is complete or the shopper asks for a total, call view_cart.
@@ -267,7 +269,7 @@ def dispatch_tool(tool_name: str, tool_args: dict, session_state) -> dict:
                 "reward_applied": ep["reward_applied"],
                 "total_savings": ep["total_savings"],
                 "final_price": ep["final_price"],
-                "image_url": get_image_url(p),
+                "image_url": get_image_url(p, preferred_colors=colors),
                 "subcategory": p.get("subcategory", ""),
                 "colors": p.get("colors", []),
             })
