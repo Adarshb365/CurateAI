@@ -239,13 +239,23 @@ def dispatch_tool(tool_name: str, tool_args: dict, session_state) -> dict:
         limit = min(int(tool_args.get("limit", 5)), 6)
 
         # Persist colors when Gemini provides them; recover them when it doesn't
+        _COLOR_WORDS = {
+            "red","blue","green","yellow","orange","purple","pink","black","white",
+            "grey","gray","brown","beige","cream","navy","teal","coral","mustard",
+            "olive","maroon","gold","silver","khaki","rust","peach","lavender","mint",
+            "multicolor","floral","printed","ivory","turquoise","indigo","burgundy",
+        }
         color_ctx: dict = session_state.setdefault("color_context", {})
         if colors:
             color_ctx["_last"] = list(colors)
             if category:
                 color_ctx[category] = list(colors)
         else:
+            # 1. try category-specific context, then global last
             colors = color_ctx.get(category) or color_ctx.get("_last") or []
+            # 2. last resort: pull any color words Gemini put in tags
+            if not colors:
+                colors = [t for t in tags if t.lower() in _COLOR_WORDS]
 
         results = match_products(tags, colors=colors, gender=gender, limit=limit * 2)
         if category:

@@ -69,7 +69,8 @@ def match_products(tags: list, colors: list = None, gender: str = None, limit: i
         score = tag_overlap + color_overlap
         if score > 0:
             scored.append((score, p))
-    scored.sort(key=lambda x: x[0], reverse=True)
+    # Primary sort: score descending. Tiebreak: more tags = more specific product, prefer it.
+    scored.sort(key=lambda x: (x[0], len(x[1].get("tags", []))), reverse=True)
     return [p for _, p in scored[:limit]]
 
 
